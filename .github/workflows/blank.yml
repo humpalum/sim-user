@@ -17,7 +17,7 @@ jobs:
       # ...
       - name: "Download AutoIT3"
         run: |
-          Invoke-WebRequest https://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3.zip" -OutFile autoit-v3.zip
+          Invoke-WebRequest "https://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3.zip" -OutFile autoit-v3.zip
            7z X .\autoit-v3.zip
 
       - name: "Build"
