@@ -39,4 +39,4 @@ jobs:
           title: "Latest Auto"
           prerelease: false
           files: |
-            $GITHUB_WORKSPACE\windows\5minuser\5minuser.exe
+            *user.exe
