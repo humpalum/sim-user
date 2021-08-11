@@ -36,4 +36,4 @@ jobs:
           title: "Latest Auto"
           prerelease: false
           files: |
-            5minuser.exe
+            .\windows\5minuser\5minuser.exe
