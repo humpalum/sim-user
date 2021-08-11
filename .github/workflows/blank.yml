@@ -25,11 +25,12 @@ jobs:
       - name: "Build, Test"
         run: |
           echo $GITHUB_WORKSPACE
-          .\install\Aut2Exe\Aut2exe.exe /in $GITHUB_WORKSPACE\windows\5minuser\5minuser.au3 \out $GITHUB_WORKSPACE\windows\5minuser\5minuser.exe 
+          .\install\Aut2Exe\Aut2exe.exe /in .\windows\5minuser\5minuser.au3 \out .\windows\5minuser\5minuser.exe 
+          dir
           dir .\windows
           dir .\windows\5minuser\
           dir $GITHUB_WORKSPACE
-          Invoke-Item $GITHUB_WORKSPACE\windows\5minuser\5minuser.exe
+          Invoke-Item .\windows\5minuser\5minuser.exe
         
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
