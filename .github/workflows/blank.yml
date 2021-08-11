@@ -23,6 +23,8 @@ jobs:
       - name: "Build, Test"
         run: |
           .\install\Aut2Exe\Aut2exe.exe /in .\windows\5minuser\5minuser.au3 \out .\windows\5minuser\5minuser.exe 
+          dir .\windows
+          dir .\windows\5minuser\
           .\windows\5minuser\5minuser.exe
         
       - uses: "marvinpinto/action-automatic-releases@latest"
