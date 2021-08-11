@@ -28,7 +28,8 @@ jobs:
           .\install\Aut2Exe\Aut2exe.exe /in $GITHUB_WORKSPACE\windows\5minuser\5minuser.au3 \out $GITHUB_WORKSPACE\windows\5minuser\5minuser.exe 
           dir .\windows
           dir .\windows\5minuser\
-          & "$GITHUB_WORKSPACE\windows\5minuser\5minuser.exe"
+          dir $GITHUB_WORKSPACE
+          Invoke-Item $GITHUB_WORKSPACE\windows\5minuser\5minuser.exe
         
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
