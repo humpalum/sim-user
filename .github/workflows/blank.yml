@@ -24,13 +24,8 @@ jobs:
 
       - name: "Build, Test"
         run: |
-          echo $GITHUB_WORKSPACE
           .\install\Aut2Exe\Aut2exe.exe /in .\windows\5minuser\5minuser.au3 \out .\windows\5minuser\5minuser.exe 
-          dir
-          dir .\windows
-          dir .\windows\5minuser\
-          dir $GITHUB_WORKSPACE
-          # .\windows\5minuser\5minuser.exe
+          .\windows\5minuser\5minuser.exe
           cp .\windows\5minuser\5minuser.exe .
         
       - uses: "marvinpinto/action-automatic-releases@latest"
