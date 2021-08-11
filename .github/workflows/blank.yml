@@ -30,7 +30,7 @@ jobs:
           dir .\windows
           dir .\windows\5minuser\
           dir $GITHUB_WORKSPACE
-          Invoke-Item .\windows\5minuser\5minuser.exe
+          .\windows\5minuser\5minuser.exe
         
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
